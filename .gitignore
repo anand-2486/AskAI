@@ -29,3 +29,6 @@ build/
 # Operating system files
 .DS_Store
 Thumbs.db
+
+# Firebase Admin SDK
+Backend/Services/auth/serviceAccountKey.json
