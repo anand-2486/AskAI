@@ -40,3 +40,11 @@ This document explains how to set up and run the AskAI project locally.
 - now we will always use axios to fetch server api in frontend
 - We will be always using gateway url so will create a separate axios file within utils
 - created a "api" using create axios such that instead of using axios to fetch we will use "api" and will route through that
+
+---
+# Setting Up REDIS File
+- will create a docker-compose.yml file and will pull redis through it
+- to run it in background "docker compose up -d"
+- redis works at port 6379
+- it will be used by many folder so will be using at shared
+- create a npm init in gateway and install "ioredis"
