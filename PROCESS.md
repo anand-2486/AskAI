@@ -48,3 +48,11 @@ This document explains how to set up and run the AskAI project locally.
 - redis works at port 6379
 - it will be used by many folder so will be using at shared
 - create a npm init in gateway and install "ioredis"
+
+---
+# Setting Up Auth Middleware
+- First we created a user controller.js in gateway which return the user from request if possible
+- creating an auth middleware within gateway in which checks if there exist a pre-existing session or not if session is not expired it used the same session
+- created an getCurrentUser.js in frontend to get "user" details which we fetch from api from "/me" route
+- Added a useEffect within App.jsx with get user function which waits for getCurrentUser()
+- removed strict mode from main.jsx
