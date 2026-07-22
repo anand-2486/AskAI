@@ -56,3 +56,14 @@ This document explains how to set up and run the AskAI project locally.
 - created an getCurrentUser.js in frontend to get "user" details which we fetch from api from "/me" route
 - Added a useEffect within App.jsx with get user function which waits for getCurrentUser()
 - removed strict mode from main.jsx
+
+---
+# create Redux Toolkit
+- install it using npm
+- state management by creating a store i.e centralizing the data such that it can be accessed by any file
+- we can create a slice of data where data is being stored
+- for that we create userSlice.js and slice.js within redux folder
+- used dispatcher and selector in Home.jsx
+- added dispatch in app.jsx
+- used provider=store in main.jsx
+- we have two types of hook here one is dispatcher and other is selector
